@@ -340,6 +340,10 @@ p {
   color: var(--blue-main);
 }
 
+.testimonials-section .eyebrow {
+  color: var(--blue-dark);
+}
+
 .hero-home {
   position: relative;
   isolation: isolate;
@@ -1116,6 +1120,17 @@ textarea:focus {
 
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 981px) {
+  .testimonials-section .section-heading {
+    max-width: none;
+  }
+
+  .testimonials-section #reviews-title,
+  .testimonials-section .section-heading p {
+    white-space: nowrap;
   }
 }
 
