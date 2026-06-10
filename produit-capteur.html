@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Capteur équipement Sondélia : suivi d'état et alertes pour équipements de piscine.">
   <title>Capteur équipement | Sondélia</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20260610">
+  <link rel="stylesheet" href="assets/styles.css?v=20260610-wireframes">
   <script src="assets/main.js" defer></script>
 </head>
 <body>
@@ -44,24 +44,40 @@
   </header>
 
   <main id="main">
-    <section class="section" aria-labelledby="product-title">
+    <section class="section product-hero" aria-labelledby="product-title">
+      <div class="container">
+        <a class="back-link" href="boutique.html">← Retour à la boutique</a>
+      </div>
       <div class="container product-detail">
-        <div class="product-media">
-          <img src="assets/product-capteur.svg" alt="Capteur équipement Sondélia carré avec indicateur connecté">
+        <div class="product-gallery">
+          <div class="product-media">
+            <img src="assets/product-capteur.svg" alt="Capteur équipement Sondélia carré avec indicateur connecté">
+          </div>
+          <div class="gallery-thumbs" aria-label="Aperçus produit">
+            <button class="thumb is-active" type="button" aria-label="Vue principale du capteur">
+              <img src="assets/product-capteur.svg" alt="">
+            </button>
+            <button class="thumb" type="button" aria-label="Vue connectée du capteur">
+              <img src="assets/product-capteur.svg" alt="">
+            </button>
+          </div>
         </div>
         <div class="product-summary">
           <span class="eyebrow">Suivi d’équipement</span>
           <h1 id="product-title">Capteur équipement</h1>
-          <p class="price">7 €</p>
+          <div class="purchase-panel">
+            <p class="price">7 € <span>TTC</span></p>
+            <div class="product-actions">
+              <button class="btn btn-secondary" type="button" data-favorite="Capteur équipement" aria-pressed="false">Ajouter aux favoris</button>
+              <button class="btn btn-primary" type="button" data-cart="Capteur équipement">Ajouter au panier</button>
+            </div>
+            <p class="purchase-note">Compatible abonnement premium</p>
+          </div>
           <p>Le capteur Sondélia permet de suivre l’état d’un équipement de piscine et d’enrichir les alertes de l’application.</p>
           <div class="badge-row">
             <span class="badge">Installation simple</span>
             <span class="badge">Alertes utiles</span>
             <span class="badge forecast">Premium compatible</span>
-          </div>
-          <div class="product-actions">
-            <button class="btn btn-primary" type="button" data-cart="Capteur équipement">Ajouter au panier</button>
-            <button class="btn btn-secondary" type="button" data-favorite="Capteur équipement" aria-pressed="false">Ajouter aux favoris</button>
           </div>
         </div>
       </div>
@@ -73,7 +89,7 @@
           <span class="eyebrow">Caractéristiques</span>
           <h2 id="features-title">Un complément simple pour des alertes plus complètes</h2>
         </div>
-        <ul class="feature-list">
+        <ul class="feature-list stacked">
           <li><span class="check-icon" aria-hidden="true">✓</span>Installation simple</li>
           <li><span class="check-icon" aria-hidden="true">✓</span>Détection d’état</li>
           <li><span class="check-icon" aria-hidden="true">✓</span>Connexion à l’application</li>
@@ -85,7 +101,10 @@
 
     <section class="section" aria-labelledby="spec-title">
       <div class="container spec-panel">
-        <h2 id="spec-title">Spécifications</h2>
+        <div class="section-heading">
+          <span class="eyebrow">Détails techniques</span>
+          <h2 id="spec-title">Spécifications</h2>
+        </div>
         <dl class="spec-grid">
           <div><dt>Dimensions</dt><dd>40 × 28 mm</dd></div>
           <div><dt>Poids</dt><dd>35 g</dd></div>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Sonde Sondélia : analyse pH, désinfectant, température et suivi Wi-Fi pour piscine privée.">
   <title>Sonde Sondélia | Sondélia</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20260610">
+  <link rel="stylesheet" href="assets/styles.css?v=20260610-wireframes">
   <script src="assets/main.js" defer></script>
 </head>
 <body>
@@ -44,24 +44,40 @@
   </header>
 
   <main id="main">
-    <section class="section" aria-labelledby="product-title">
+    <section class="section product-hero" aria-labelledby="product-title">
+      <div class="container">
+        <a class="back-link" href="boutique.html">← Retour à la boutique</a>
+      </div>
       <div class="container product-detail">
-        <div class="product-media">
-          <img src="assets/product-sonde.svg" alt="Sonde Sondélia blanche avec connexion Wi-Fi">
+        <div class="product-gallery">
+          <div class="product-media">
+            <img src="assets/product-sonde.svg" alt="Sonde Sondélia blanche avec connexion Wi-Fi">
+          </div>
+          <div class="gallery-thumbs" aria-label="Aperçus produit">
+            <button class="thumb is-active" type="button" aria-label="Vue principale de la sonde">
+              <img src="assets/product-sonde.svg" alt="">
+            </button>
+            <button class="thumb" type="button" aria-label="Vue connectée de la sonde">
+              <img src="assets/product-sonde.svg" alt="">
+            </button>
+          </div>
         </div>
         <div class="product-summary">
           <span class="eyebrow">Analyse connectée</span>
           <h1 id="product-title">Sonde Sondélia</h1>
-          <p class="price">34 €</p>
+          <div class="purchase-panel">
+            <p class="price">34 € <span>TTC</span></p>
+            <div class="product-actions">
+              <button class="btn btn-secondary" type="button" data-favorite="Sonde Sondélia" aria-pressed="false">Ajouter aux favoris</button>
+              <button class="btn btn-primary" type="button" data-cart="Sonde Sondélia">Ajouter au panier</button>
+            </div>
+            <p class="purchase-note">Livraison suivie · garantie 2 ans</p>
+          </div>
           <p>La sonde Sondélia analyse les paramètres essentiels de votre piscine et transmet les données à l’application mobile.</p>
           <div class="badge-row">
             <span class="badge">IP68</span>
             <span class="badge">Wi-Fi 2,4 GHz</span>
             <span class="badge forecast">Autonomie 6 mois</span>
-          </div>
-          <div class="product-actions">
-            <button class="btn btn-primary" type="button" data-cart="Sonde Sondélia">Ajouter au panier</button>
-            <button class="btn btn-secondary" type="button" data-favorite="Sonde Sondélia" aria-pressed="false">Ajouter aux favoris</button>
           </div>
         </div>
       </div>
@@ -73,7 +89,7 @@
           <span class="eyebrow">Caractéristiques</span>
           <h2 id="features-title">Pensée pour l’eau, simple au quotidien</h2>
         </div>
-        <ul class="feature-list">
+        <ul class="feature-list stacked">
           <li><span class="check-icon" aria-hidden="true">✓</span>Analyse du pH</li>
           <li><span class="check-icon" aria-hidden="true">✓</span>Suivi du désinfectant</li>
           <li><span class="check-icon" aria-hidden="true">✓</span>Suivi de la température</li>
@@ -87,7 +103,10 @@
 
     <section class="section" aria-labelledby="spec-title">
       <div class="container spec-panel">
-        <h2 id="spec-title">Spécifications</h2>
+        <div class="section-heading">
+          <span class="eyebrow">Détails techniques</span>
+          <h2 id="spec-title">Spécifications</h2>
+        </div>
         <dl class="spec-grid">
           <div><dt>Dimensions</dt><dd>250 × 45 mm</dd></div>
           <div><dt>Poids</dt><dd>200 g</dd></div>
