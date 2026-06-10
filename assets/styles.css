@@ -348,11 +348,10 @@ p {
   align-items: center;
   overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(0, 49, 73, 0.98), rgba(0, 49, 73, 0.82), rgba(0, 49, 73, 0.55)),
-    url("hero-pool.svg") center / cover;
+    linear-gradient(90deg, rgba(0, 49, 73, 0.94) 0%, rgba(0, 49, 73, 0.78) 42%, rgba(0, 49, 73, 0.34) 100%),
+    url("hero-pool-photo.jpg") center / cover;
 }
 
-.hero-home::after,
 .hero-about::after {
   content: "";
   position: absolute;
@@ -363,8 +362,8 @@ p {
 
 .hero-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.75fr);
-  gap: 70px;
+  grid-template-columns: minmax(0, 680px);
+  gap: 0;
   align-items: center;
 }
 
@@ -383,64 +382,12 @@ p {
   color: rgba(255, 255, 255, 0.86);
 }
 
-.hero-pill,
-.metric-alert {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 30px;
-  padding: 6px 10px;
-  border: 1px solid rgba(217, 252, 254, 0.25);
-  border-radius: 999px;
-  color: rgba(255, 255, 255, 0.86);
-  font-size: 0.78rem;
-  font-weight: 600;
-}
-
 .hero-actions,
 .product-actions,
 .card-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-}
-
-.hero-metrics {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.metric-card,
-.metric-alert {
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.16);
-  color: var(--white);
-  backdrop-filter: blur(10px);
-}
-
-.metric-card {
-  padding: 18px;
-}
-
-.metric-card span {
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.metric-card strong {
-  display: block;
-  margin-top: 6px;
-  font-size: 1.5rem;
-}
-
-.metric-alert {
-  grid-column: 1 / -1;
-  justify-content: flex-start;
-  padding: 14px 18px;
 }
 
 .feature-grid,
@@ -1208,14 +1155,14 @@ textarea:focus {
   }
 
   .hero-home {
-    min-height: 720px;
+    min-height: clamp(540px, calc(100svh - 96px), 640px);
+    background-position: center;
   }
 
   .hero-layout {
     gap: 34px;
   }
 
-  .hero-metrics,
   .feature-grid,
   .values-grid,
   .review-grid,
