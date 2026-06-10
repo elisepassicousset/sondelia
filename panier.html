@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Capteur Aqua Sondélia pour centraliser les données de votre piscine.">
-  <title>Capteur Aqua | Sondélia</title>
+  <meta name="description" content="Panier Sondélia.">
+  <title>Mon panier | Sondélia</title>
   <link rel="stylesheet" href="assets/styles.css?v=20260610-maquettes">
   <script src="assets/main.js" defer></script>
 </head>
@@ -20,43 +20,33 @@
   </header>
 
   <main id="main" class="page-frost">
-    <section class="product-detail-page">
-      <div class="container"><a class="back-link" href="boutique.html">← Retour à la boutique</a></div>
-      <div class="container product-detail">
-        <div class="product-gallery">
-          <div class="product-media"><img src="assets/product-capteur-photo.svg" alt="Capteur Aqua Sondélia"></div>
-          <div class="gallery-thumbs"><button class="thumb is-active" type="button"><img src="assets/product-capteur-photo.svg" alt=""></button><button class="thumb" type="button"><img src="assets/product-capteur-photo.svg" alt=""></button></div>
-        </div>
-        <div>
-          <span class="eyebrow">Capteur</span>
-          <h1>Capteur Aqua</h1>
-          <p>Hub intelligent qui centralise et analyse les données de votre piscine.</p>
-          <div class="purchase-panel">
-            <span class="price">149€ TTC</span>
-            <div class="product-actions"><button class="btn btn-primary" type="button" data-cart="Capteur Aqua">Ajouter au panier</button><button class="btn btn-outline-danger" type="button" data-favorite="Capteur Aqua">Ajouter aux favoris</button></div>
-            <p class="purchase-note">Installation simple · garantie 2 ans</p>
-          </div>
-          <h2>Caractéristiques</h2>
-          <ul class="feature-list">
-            <li><span class="check-icon">✓</span>Centralisation des données piscine</li>
-            <li><span class="check-icon">✓</span>Détection d’état des équipements</li>
-            <li><span class="check-icon">✓</span>Connexion à l’application Sondélia</li>
-            <li><span class="check-icon">✓</span>Alertes en cas d’anomalie</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="section section-soft" aria-labelledby="spec-title">
+    <section class="cart-section">
       <div class="container">
-        <h2 id="spec-title">Spécifications</h2>
-        <dl class="spec-grid">
-          <div class="spec-card"><dt>Dimensions</dt><dd>80 × 80 mm</dd></div>
-          <div class="spec-card"><dt>Poids</dt><dd>120 g</dd></div>
-          <div class="spec-card"><dt>Alimentation</dt><dd>USB-C</dd></div>
-          <div class="spec-card"><dt>Connectivité</dt><dd>Wi-Fi 2,4 GHz</dd></div>
-          <div class="spec-card"><dt>Compatibilité</dt><dd>Premium</dd></div>
-          <div class="spec-card"><dt>Usage</dt><dd>Piscine privée</dd></div>
-        </dl>
+        <div class="cart-layout">
+          <div>
+            <span class="eyebrow">Votre sélection</span>
+            <h1>Mon Panier</h1>
+            <article class="cart-item">
+              <img src="assets/product-sonde-photo.svg" alt="Sonde Pro">
+              <div>
+                <h2>Sonde Pro</h2>
+                <strong>199€</strong>
+                <div class="quantity" aria-label="Quantité">
+                  <button type="button" aria-label="Réduire la quantité">−</button><span>1</span><button type="button" aria-label="Augmenter la quantité">+</button>
+                </div>
+              </div>
+              <button class="remove-item" type="button" aria-label="Retirer l’article">⌫</button>
+            </article>
+          </div>
+          <aside class="summary-card" aria-label="Récapitulatif panier">
+            <h2>Récapitulatif</h2>
+            <div class="summary-line"><span>Sonde Pro x1</span><strong>199.00€</strong></div>
+            <div class="summary-line"><span>Livraison</span><strong class="text-accent">Gratuite</strong></div>
+            <div class="summary-total"><span>Total</span><span>199.00€</span></div>
+            <a class="btn btn-light" href="#">Commander</a>
+            <p class="secure-note">Paiement sécurisé · Garantie 2 ans</p>
+          </aside>
+        </div>
       </div>
     </section>
   </main>

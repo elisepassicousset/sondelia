@@ -3,103 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Découvrez l'histoire, la mission et les valeurs de Sondélia.">
+  <meta name="description" content="Découvrez la mission et les valeurs de Sondélia.">
   <title>À propos | Sondélia</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20260610-wireframes">
+  <link rel="stylesheet" href="assets/styles.css?v=20260610-maquettes">
   <script src="assets/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
   <header class="site-header">
     <nav class="navbar container" aria-label="Navigation principale">
-      <a class="brand" href="index.html" aria-label="Sondélia - Accueil"><img src="assets/logo.svg" alt="Sondélia"></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-        <span class="sr-only">Ouvrir le menu</span>
-        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
-      </button>
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt=""><span>Sondélia</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="sr-only">Ouvrir le menu</span><span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span></button>
       <div class="nav-links" id="primary-navigation">
-        <a href="index.html">Accueil</a>
-        <a href="a-propos.html" aria-current="page">À propos</a>
-        <a href="boutique.html">Boutique</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html">Accueil</a><a href="boutique.html">Boutique</a><a href="a-propos.html" aria-current="page">À propos</a><a href="contact.html">Contact</a>
       </div>
-      <div class="header-actions" aria-label="Actions utilisateur">
-        <a class="icon-button" href="#" aria-label="Compte utilisateur">
-          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
-            <path d="M4 21C5.6 16.8 8.2 15 12 15C15.8 15 18.4 16.8 20 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </a>
-        <a class="icon-button" href="boutique.html" aria-label="Panier">
-          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M6 6H21L19 14H8L6 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M6 6L5 3H2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="9" cy="20" r="1.7" fill="currentColor"/>
-            <circle cx="18" cy="20" r="1.7" fill="currentColor"/>
-          </svg>
-          <span class="cart-count" aria-live="polite">0</span>
-        </a>
+      <div class="header-actions">
+        <a class="icon-button" href="compte.html" aria-label="Compte utilisateur"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 21C5.6 16.8 8.2 15 12 15C15.8 15 18.4 16.8 20 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+        <a class="icon-button" href="panier.html" aria-label="Panier"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6H21L19 14H8L6 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 6L5 3H2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="20" r="1.7" fill="currentColor"/><circle cx="18" cy="20" r="1.7" fill="currentColor"/></svg><span class="cart-count" aria-live="polite">1</span></a>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero hero-about" aria-labelledby="about-title">
-      <div class="container hero-copy">
-        <span class="eyebrow">À propos de Sondélia</span>
-        <h1 id="about-title">Notre histoire</h1>
-        <p>Sondélia est née d’un constat simple : la gestion d’une piscine reste souvent complexe, technique et chronophage. La marque propose une solution connectée pensée pour rendre le suivi de l’eau plus clair, plus accessible et plus responsable.</p>
+    <section class="hero-about" aria-labelledby="about-title">
+      <div class="container">
+        <span class="eyebrow">Notre histoire</span>
+        <h1 id="about-title">À propos de <span class="text-accent">Sondélia</span></h1>
+        <p>Née de la conviction que la gestion d’une piscine ne devrait jamais être une corvée, Sondélia réunit expertise en ingénierie et design UX pour offrir une expérience de surveillance sans précédent.</p>
       </div>
     </section>
 
-    <section class="section about-mission" aria-labelledby="mission-title">
-      <div class="container split">
-        <div>
+    <section class="section section-frost" aria-labelledby="mission-title">
+      <div class="container mission-layout">
+        <div class="mission-copy">
           <span class="eyebrow">Notre mission</span>
           <h2 id="mission-title">Rendre la qualité de l’eau accessible à tous</h2>
-          <p>Sondélia accompagne les particuliers avec des données simples, des alertes utiles et des recommandations concrètes. L’objectif : entretenir sa piscine avec plus de confiance, moins de gaspillage et une meilleure compréhension de l’équilibre de l’eau.</p>
-          <ul class="mission-list">
-            <li><span class="check-icon" aria-hidden="true">✓</span>Données lisibles pour décider rapidement</li>
-            <li><span class="check-icon" aria-hidden="true">✓</span>Alertes utiles pour anticiper les anomalies</li>
-            <li><span class="check-icon" aria-hidden="true">✓</span>Recommandations concrètes pour un entretien responsable</li>
-          </ul>
+          <p>Chez Sondélia, nous croyons que chaque propriétaire de piscine mérite un accès simple et fiable aux données essentielles de son eau. Notre technologie transforme ces mesures complexes en informations claires et exploitables.</p>
+          <p>Notre équipe combine expertise électronique, chimie de l’eau et design d’interfaces pour créer des produits qui s’intègrent naturellement dans votre quotidien.</p>
         </div>
-        <div class="stats-grid compact" aria-label="Chiffres clés">
-          <article class="stat-card"><strong>99,5 %</strong><span>précision d’analyse</span></article>
-          <article class="stat-card"><strong>24/7</strong><span>surveillance continue</span></article>
-          <article class="stat-card"><strong>-30 %</strong><span>impact potentiel sur la consommation de produits</span></article>
-          <article class="stat-card"><strong>20 s</strong><span>temps moyen pour consulter l’état du bassin</span></article>
+        <div class="stats-grid" aria-label="Chiffres clés">
+          <article class="stat-card"><strong>99.5%</strong><span>Précision des mesures</span></article>
+          <article class="stat-card"><strong>24/7</strong><span>Surveillance continue</span></article>
+          <article class="stat-card"><strong>2 ans</strong><span>Garantie produit</span></article>
+          <article class="stat-card"><strong>&lt;30s</strong><span>Mise à jour des données</span></article>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="values-title">
+    <section class="section section-soft" aria-labelledby="values-title">
       <div class="container">
         <div class="section-heading center">
           <span class="eyebrow">Nos valeurs</span>
-          <h2 id="values-title">Une technologie rassurante</h2>
+          <h2 id="values-title">Ce qui nous guide</h2>
         </div>
-        <div class="values-grid">
-          <article class="value-card">
-            <span class="icon-badge" aria-hidden="true">01</span>
-            <h3>Précision</h3>
-            <p>Des mesures fiables pour suivre les paramètres essentiels sans approximation inutile.</p>
-          </article>
-          <article class="value-card">
-            <span class="icon-badge" aria-hidden="true">02</span>
-            <h3>Accessibilité</h3>
-            <p>Une information claire, compréhensible et disponible au moment où elle compte.</p>
-          </article>
-          <article class="value-card">
-            <span class="icon-badge warning" aria-hidden="true">03</span>
-            <h3>Durabilité</h3>
-            <p>Une gestion plus responsable de l’eau, de l’énergie et des produits d’entretien.</p>
-          </article>
-          <article class="value-card">
-            <span class="icon-badge" aria-hidden="true">04</span>
-            <h3>Excellence</h3>
-            <p>Un soin apporté à l’expérience, au design et à la fiabilité du service.</p>
-          </article>
+        <div class="values-strip">
+          <article class="value-item"><span class="icon-badge" aria-hidden="true">◎</span><h3>Précision</h3><p>Des mesures d’une exactitude scientifique pour une eau toujours parfaite.</p></article>
+          <article class="value-item"><span class="icon-badge" aria-hidden="true">♙</span><h3>Accessibilité</h3><p>Une technologie complexe rendue simple et intuitive pour tous.</p></article>
+          <article class="value-item"><span class="icon-badge" aria-hidden="true">◒</span><h3>Durabilité</h3><p>Moins de produits chimiques gaspillés grâce à un dosage intelligent.</p></article>
+          <article class="value-item"><span class="icon-badge" aria-hidden="true">⌑</span><h3>Excellence</h3><p>Conçu et assemblé en France avec les meilleurs composants.</p></article>
         </div>
       </div>
     </section>
@@ -107,26 +68,11 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div><a class="footer-brand" href="index.html" aria-label="Sondélia - Accueil"><img src="assets/logo-clair.svg" alt="Sondélia"></a></div>
-      <nav aria-label="Navigation pied de page">
-        <p class="footer-title">Navigation</p>
-        <div class="footer-nav">
-          <a href="index.html">Accueil</a>
-          <a href="a-propos.html">À propos</a>
-          <a href="boutique.html">Boutique</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
-      <div>
-        <p class="footer-title">Contact</p>
-        <address class="footer-contact">
-          <a href="mailto:contact@sondelia.fr">contact@sondelia.fr</a>
-          <a href="tel:+33123456789">+33 1 23 45 67 89</a>
-          <span>Bordeaux, France</span>
-        </address>
-      </div>
+      <div><a class="footer-brand" href="index.html"><img src="assets/logo-clair.svg" alt=""><span>Sondélia</span></a><p>La technologie au service de votre piscine. Surveillance intelligente, sérénité garantie.</p></div>
+      <nav aria-label="Navigation pied de page"><p class="footer-title">Navigation</p><div class="footer-nav"><a href="index.html">Accueil</a><a href="boutique.html">Boutique</a><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a></div></nav>
+      <div><p class="footer-title">Contact</p><address class="footer-contact"><a href="mailto:contact@sondelia.fr">contact@sondelia.fr</a><a href="tel:+33123456789">+33 1 23 45 67 89</a><span>Paris, France</span></address></div>
     </div>
-    <div class="container footer-bottom"><p>© 2026 Sondélia. Tous droits réservés.</p></div>
+    <div class="container footer-bottom"><p>© 2026 Sondélia. Tous droits réservés.</p><div class="footer-legal"><a href="#">Mentions légales</a><a href="#">Politique de confidentialité</a></div></div>
   </footer>
 </body>
 </html>

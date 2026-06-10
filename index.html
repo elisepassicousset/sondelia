@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Sondélia vous aide à suivre et optimiser la gestion de votre piscine à distance.">
   <title>Sondélia | Piscine connectée et responsable</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20260610-wireframes">
+  <link rel="stylesheet" href="assets/styles.css?v=20260610-maquettes">
   <script src="assets/main.js" defer></script>
 </head>
 <body>
@@ -13,7 +13,8 @@
   <header class="site-header">
     <nav class="navbar container" aria-label="Navigation principale">
       <a class="brand" href="index.html" aria-label="Sondélia - Accueil">
-        <img src="assets/logo.svg" alt="Sondélia">
+        <img src="assets/logo.svg" alt="">
+        <span>Sondélia</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
         <span class="sr-only">Ouvrir le menu</span>
@@ -21,112 +22,124 @@
       </button>
       <div class="nav-links" id="primary-navigation">
         <a href="index.html" aria-current="page">Accueil</a>
-        <a href="a-propos.html">À propos</a>
         <a href="boutique.html">Boutique</a>
+        <a href="a-propos.html">À propos</a>
         <a href="contact.html">Contact</a>
       </div>
       <div class="header-actions" aria-label="Actions utilisateur">
-        <a class="icon-button" href="#" aria-label="Compte utilisateur">
-          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
-            <path d="M4 21C5.6 16.8 8.2 15 12 15C15.8 15 18.4 16.8 20 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
+        <a class="icon-button" href="compte.html" aria-label="Compte utilisateur">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 21C5.6 16.8 8.2 15 12 15C15.8 15 18.4 16.8 20 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </a>
-        <a class="icon-button" href="boutique.html" aria-label="Panier">
-          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M6 6H21L19 14H8L6 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M6 6L5 3H2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="9" cy="20" r="1.7" fill="currentColor"/>
-            <circle cx="18" cy="20" r="1.7" fill="currentColor"/>
-          </svg>
-          <span class="cart-count" aria-live="polite">0</span>
+        <a class="icon-button" href="panier.html" aria-label="Panier">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6H21L19 14H8L6 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 6L5 3H2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="20" r="1.7" fill="currentColor"/><circle cx="18" cy="20" r="1.7" fill="currentColor"/></svg>
+          <span class="cart-count" aria-live="polite">1</span>
         </a>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero hero-home" aria-labelledby="home-title">
-      <div class="container hero-copy">
-        <span class="eyebrow">Gestion connectée et responsable</span>
-        <h1 id="home-title">Votre piscine sous contrôle à distance</h1>
-        <p>Sondélia vous aide à suivre la qualité de l’eau, anticiper les anomalies et réduire votre consommation d’eau, d’énergie et de produits d’entretien.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="boutique.html">Découvrir nos produits</a>
-          <a class="btn btn-secondary" href="a-propos.html">En savoir plus</a>
+    <section class="hero-home" aria-labelledby="home-title">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <span class="hero-pill">Technologie intelligente</span>
+          <h1 id="home-title">Votre piscine, <span class="text-accent">sous</span> contrôle à distance.</h1>
+          <p>Sondélia surveille en temps réel la qualité de votre eau pour anticiper les alertes et réduire vos efforts d’entretien.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="boutique.html">Découvrir nos produits</a>
+            <a class="btn btn-secondary" href="a-propos.html">En savoir plus</a>
+          </div>
         </div>
-        <div class="trust-row" aria-label="Points forts Sondélia">
-          <span class="trust-pill"><strong>IP68</strong> conçu pour l’eau</span>
-          <span class="trust-pill"><strong>24/7</strong> suivi continu</span>
-          <span class="trust-pill"><strong>Prévision</strong> alertes utiles</span>
+        <div class="hero-metrics" aria-label="Exemple de données piscine">
+          <article class="metric-card"><span>pH</span><strong>7.2</strong></article>
+          <article class="metric-card"><span>Température</span><strong>28°</strong></article>
+          <article class="metric-card"><span>Chlore</span><strong>1.5 ppm</strong></article>
+          <article class="metric-card"><span>Batterie</span><strong>98 %</strong></article>
+          <div class="metric-alert"><span aria-hidden="true">●</span>Dispositif connecté : stable</div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="precision-title">
+    <section class="section section-frost" aria-labelledby="precision-title">
       <div class="container">
         <div class="section-heading center">
-          <span class="eyebrow">Technologie douce</span>
-          <h2 id="precision-title">Une technologie de précision</h2>
-          <p>Des données claires et fiables pour prendre les bonnes décisions, sans complexifier l’entretien de votre bassin.</p>
+          <h2 id="precision-title">Une technologie de <span class="text-accent">précision</span></h2>
+          <p>Tout ce qu’il vous faut pour surveiller votre bassin en continu, depuis une interface simple et rassurante.</p>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
-            <span class="icon-badge" aria-hidden="true">
-              <svg width="25" height="25" viewBox="0 0 24 24" fill="none">
-                <path d="M4.5 9.5C8.8 5.8 15.2 5.8 19.5 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M8 13C10.4 11.1 13.6 11.1 16 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="12" cy="17" r="1.8" fill="currentColor"/>
-              </svg>
-            </span>
-            <h3>Connexion Wi-Fi</h3>
-            <p>Transmission simple des données vers l’application, avec une connexion Wi-Fi 2,4 GHz adaptée à la maison.</p>
+            <span class="icon-badge" aria-hidden="true">⌁</span>
+            <h3>Connecté en Wi-Fi</h3>
+            <p>Votre piscine transmet ses données sans intervention manuelle.</p>
           </article>
           <article class="feature-card">
-            <span class="icon-badge" aria-hidden="true">
-              <svg width="25" height="25" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3L19 6V11C19 15.6 16.2 19.3 12 21C7.8 19.3 5 15.6 5 11V6L12 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M9 12L11 14L15.5 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <h3>Fiable IP68</h3>
-            <p>Une conception étanche pensée pour rester au contact de l’eau et accompagner le bassin au quotidien.</p>
+            <span class="icon-badge" aria-hidden="true">◎</span>
+            <h3>Étanche IP68</h3>
+            <p>Conçu pour rester immergé et fiable au quotidien.</p>
           </article>
           <article class="feature-card">
-            <span class="icon-badge" aria-hidden="true">
-              <svg width="25" height="25" viewBox="0 0 24 24" fill="none">
-                <rect x="7" y="2.8" width="10" height="18.4" rx="2.5" stroke="currentColor" stroke-width="2"/>
-                <path d="M10 17.5H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </span>
-            <h3>Application mobile</h3>
-            <p>Un tableau de bord lisible pour consulter l’état de l’eau, comprendre les tendances et agir au bon moment.</p>
+            <span class="icon-badge" aria-hidden="true">▣</span>
+            <h3>App mobile</h3>
+            <p>Consultez les mesures et alertes depuis votre téléphone.</p>
           </article>
           <article class="feature-card">
-            <span class="icon-badge warning" aria-hidden="true">
-              <svg width="25" height="25" viewBox="0 0 24 24" fill="none">
-                <path d="M5 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M5 19H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M8 15L11 12L14 13.5L19 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
+            <span class="icon-badge" aria-hidden="true">⌁</span>
             <h3>Analyse avancée</h3>
-            <p>Des alertes et prévisions compréhensibles pour limiter les surdosages et mieux protéger votre installation.</p>
+            <p>Des recommandations utiles pour agir au bon moment.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-soft" aria-labelledby="cta-title">
+    <section class="section section-soft" aria-labelledby="reviews-title">
       <div class="container">
-        <div class="cta-band">
-          <div>
-            <span class="eyebrow">Entretien simplifié</span>
-            <h2 id="cta-title">Prêt à transformer la gestion de votre piscine ?</h2>
-            <p>La solution Sondélia vous accompagne avec des mesures utiles, des alertes accessibles et une vision plus responsable de l’entretien.</p>
-          </div>
-          <a class="btn btn-light" href="boutique.html">Voir la boutique</a>
+        <div class="section-heading center">
+          <span class="eyebrow">Témoignages</span>
+          <h2 id="reviews-title">Ils font confiance à <span class="text-accent">Sondélia</span></h2>
+          <p>Des avis de propriétaires de piscine qui veulent gagner du temps et surveiller leur eau avec sérénité.</p>
         </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars" aria-label="5 étoiles">★★★★★</div>
+            <p>“Installation rapide et application très claire. Je sais tout de suite quand intervenir.”</p>
+            <strong>Luc M.</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 étoiles">★★★★★</div>
+            <p>“Les alertes m’évitent les mauvaises surprises avant les week-ends en famille.”</p>
+            <strong>Claire B.</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 étoiles">★★★★★</div>
+            <p>“Un vrai confort pour surveiller la piscine sans passer par des tests compliqués.”</p>
+            <strong>Ahmed R.</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-frost" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Questions <span class="text-accent">fréquentes</span></h2>
+          <p>Tout savoir sur l’installation, la compatibilité et l’utilisation de Sondélia.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item"><span>À quoi sert la sonde Sondélia ?</span><span>+</span></div>
+          <div class="faq-item"><span>Sondélia fonctionne-t-elle avec ma piscine ?</span><span>+</span></div>
+          <div class="faq-item"><span>Quel est le produit le plus adapté ?</span><span>+</span></div>
+          <div class="faq-item"><span>Comment recevoir les alertes ?</span><span>+</span></div>
+          <div class="faq-item"><span>Les données sont-elles sécurisées ?</span><span>+</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title">Prêt à transformer la gestion de votre piscine ?</h2>
+        <p>Rejoignez les propriétaires qui choisissent Sondélia pour surveiller leur eau simplement.</p>
+        <a class="btn btn-light" href="boutique.html">Voir la boutique</a>
       </div>
     </section>
   </main>
@@ -135,15 +148,17 @@
     <div class="container footer-grid">
       <div>
         <a class="footer-brand" href="index.html" aria-label="Sondélia - Accueil">
-          <img src="assets/logo-clair.svg" alt="Sondélia">
+          <img src="assets/logo-clair.svg" alt="">
+          <span>Sondélia</span>
         </a>
+        <p>La technologie au service de votre piscine. Surveillance intelligente, sérénité garantie.</p>
       </div>
       <nav aria-label="Navigation pied de page">
         <p class="footer-title">Navigation</p>
         <div class="footer-nav">
           <a href="index.html">Accueil</a>
-          <a href="a-propos.html">À propos</a>
           <a href="boutique.html">Boutique</a>
+          <a href="a-propos.html">À propos</a>
           <a href="contact.html">Contact</a>
         </div>
       </nav>
@@ -152,12 +167,16 @@
         <address class="footer-contact">
           <a href="mailto:contact@sondelia.fr">contact@sondelia.fr</a>
           <a href="tel:+33123456789">+33 1 23 45 67 89</a>
-          <span>Bordeaux, France</span>
+          <span>Paris, France</span>
         </address>
       </div>
     </div>
     <div class="container footer-bottom">
       <p>© 2026 Sondélia. Tous droits réservés.</p>
+      <div class="footer-legal">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+      </div>
     </div>
   </footer>
 </body>

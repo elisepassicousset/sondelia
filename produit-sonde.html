@@ -3,116 +3,59 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sonde Sondélia : analyse pH, désinfectant, température et suivi Wi-Fi pour piscine privée.">
-  <title>Sonde Sondélia | Sondélia</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20260610-wireframes">
+  <meta name="description" content="Sonde Pro Sondélia pour mesurer le pH, la température et le chlore.">
+  <title>Sonde Pro | Sondélia</title>
+  <link rel="stylesheet" href="assets/styles.css?v=20260610-maquettes">
   <script src="assets/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
   <header class="site-header">
     <nav class="navbar container" aria-label="Navigation principale">
-      <a class="brand" href="index.html" aria-label="Sondélia - Accueil"><img src="assets/logo.svg" alt="Sondélia"></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-        <span class="sr-only">Ouvrir le menu</span>
-        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
-      </button>
-      <div class="nav-links" id="primary-navigation">
-        <a href="index.html">Accueil</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="boutique.html">Boutique</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="header-actions" aria-label="Actions utilisateur">
-        <a class="icon-button" href="#" aria-label="Compte utilisateur">
-          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
-            <path d="M4 21C5.6 16.8 8.2 15 12 15C15.8 15 18.4 16.8 20 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </a>
-        <a class="icon-button" href="boutique.html" aria-label="Panier">
-          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M6 6H21L19 14H8L6 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M6 6L5 3H2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="9" cy="20" r="1.7" fill="currentColor"/>
-            <circle cx="18" cy="20" r="1.7" fill="currentColor"/>
-          </svg>
-          <span class="cart-count" aria-live="polite">0</span>
-        </a>
-      </div>
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt=""><span>Sondélia</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="sr-only">Ouvrir le menu</span><span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span></button>
+      <div class="nav-links" id="primary-navigation"><a href="index.html">Accueil</a><a href="boutique.html">Boutique</a><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a></div>
+      <div class="header-actions"><a class="icon-button" href="compte.html" aria-label="Compte utilisateur"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 21C5.6 16.8 8.2 15 12 15C15.8 15 18.4 16.8 20 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a><a class="icon-button" href="panier.html" aria-label="Panier"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6H21L19 14H8L6 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 6L5 3H2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="20" r="1.7" fill="currentColor"/><circle cx="18" cy="20" r="1.7" fill="currentColor"/></svg><span class="cart-count" aria-live="polite">1</span></a></div>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="section product-hero" aria-labelledby="product-title">
-      <div class="container">
-        <a class="back-link" href="boutique.html">← Retour à la boutique</a>
-      </div>
+  <main id="main" class="page-frost">
+    <section class="product-detail-page">
+      <div class="container"><a class="back-link" href="boutique.html">← Retour à la boutique</a></div>
       <div class="container product-detail">
         <div class="product-gallery">
-          <div class="product-media">
-            <img src="assets/product-sonde.svg" alt="Sonde Sondélia blanche avec connexion Wi-Fi">
-          </div>
-          <div class="gallery-thumbs" aria-label="Aperçus produit">
-            <button class="thumb is-active" type="button" aria-label="Vue principale de la sonde">
-              <img src="assets/product-sonde.svg" alt="">
-            </button>
-            <button class="thumb" type="button" aria-label="Vue connectée de la sonde">
-              <img src="assets/product-sonde.svg" alt="">
-            </button>
-          </div>
+          <div class="product-media"><img src="assets/product-sonde-photo.svg" alt="Sonde Pro verticale Sondélia"></div>
+          <div class="gallery-thumbs"><button class="thumb is-active" type="button"><img src="assets/product-sonde-photo.svg" alt=""></button><button class="thumb" type="button"><img src="assets/product-sonde-photo.svg" alt=""></button></div>
         </div>
-        <div class="product-summary">
-          <span class="eyebrow">Analyse connectée</span>
-          <h1 id="product-title">Sonde Sondélia</h1>
+        <div>
+          <span class="eyebrow">Sonde</span>
+          <h1>Sonde Pro</h1>
+          <p>Sonde immersible pour une mesure continue du pH, de la température et du chlore.</p>
           <div class="purchase-panel">
-            <p class="price">34 € <span>TTC</span></p>
-            <div class="product-actions">
-              <button class="btn btn-secondary" type="button" data-favorite="Sonde Sondélia" aria-pressed="false">Ajouter aux favoris</button>
-              <button class="btn btn-primary" type="button" data-cart="Sonde Sondélia">Ajouter au panier</button>
-            </div>
+            <span class="price">199€ TTC</span>
+            <div class="product-actions"><button class="btn btn-primary" type="button" data-cart="Sonde Pro">Ajouter au panier</button><button class="btn btn-outline-danger" type="button" data-favorite="Sonde Pro">Ajouter aux favoris</button></div>
             <p class="purchase-note">Livraison suivie · garantie 2 ans</p>
           </div>
-          <p>La sonde Sondélia analyse les paramètres essentiels de votre piscine et transmet les données à l’application mobile.</p>
-          <div class="badge-row">
-            <span class="badge">IP68</span>
-            <span class="badge">Wi-Fi 2,4 GHz</span>
-            <span class="badge forecast">Autonomie 6 mois</span>
-          </div>
+          <h2>Caractéristiques</h2>
+          <ul class="feature-list">
+            <li><span class="check-icon">✓</span>Mesure continue du pH</li>
+            <li><span class="check-icon">✓</span>Suivi de la température</li>
+            <li><span class="check-icon">✓</span>Détection du chlore</li>
+            <li><span class="check-icon">✓</span>Connexion Wi-Fi 2,4 GHz</li>
+          </ul>
         </div>
       </div>
     </section>
-
-    <section class="section section-soft" aria-labelledby="features-title">
+    <section class="section section-soft" aria-labelledby="spec-title">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Caractéristiques</span>
-          <h2 id="features-title">Pensée pour l’eau, simple au quotidien</h2>
-        </div>
-        <ul class="feature-list stacked">
-          <li><span class="check-icon" aria-hidden="true">✓</span>Analyse du pH</li>
-          <li><span class="check-icon" aria-hidden="true">✓</span>Suivi du désinfectant</li>
-          <li><span class="check-icon" aria-hidden="true">✓</span>Suivi de la température</li>
-          <li><span class="check-icon" aria-hidden="true">✓</span>Connexion Wi-Fi 2,4 GHz</li>
-          <li><span class="check-icon" aria-hidden="true">✓</span>Indice de protection IP68</li>
-          <li><span class="check-icon" aria-hidden="true">✓</span>Autonomie : 6 mois</li>
-          <li><span class="check-icon" aria-hidden="true">✓</span>Plage de température : 0 à 50 °C</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="spec-title">
-      <div class="container spec-panel">
-        <div class="section-heading">
-          <span class="eyebrow">Détails techniques</span>
-          <h2 id="spec-title">Spécifications</h2>
-        </div>
+        <h2 id="spec-title">Spécifications</h2>
         <dl class="spec-grid">
-          <div><dt>Dimensions</dt><dd>250 × 45 mm</dd></div>
-          <div><dt>Poids</dt><dd>200 g</dd></div>
-          <div><dt>Précision pH</dt><dd>±0,01</dd></div>
-          <div><dt>Connexion</dt><dd>Wi-Fi 2,4 GHz</dd></div>
-          <div><dt>Usage</dt><dd>piscine privée</dd></div>
+          <div class="spec-card"><dt>Dimensions</dt><dd>250 × 45 mm</dd></div>
+          <div class="spec-card"><dt>Poids</dt><dd>200 g</dd></div>
+          <div class="spec-card"><dt>Autonomie</dt><dd>6 mois</dd></div>
+          <div class="spec-card"><dt>Connectivité</dt><dd>Wi-Fi 2,4 GHz</dd></div>
+          <div class="spec-card"><dt>Précision pH</dt><dd>±0,01</dd></div>
+          <div class="spec-card"><dt>Plage temp.</dt><dd>0 - 50 °C</dd></div>
         </dl>
       </div>
     </section>
@@ -120,26 +63,11 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div><a class="footer-brand" href="index.html" aria-label="Sondélia - Accueil"><img src="assets/logo-clair.svg" alt="Sondélia"></a></div>
-      <nav aria-label="Navigation pied de page">
-        <p class="footer-title">Navigation</p>
-        <div class="footer-nav">
-          <a href="index.html">Accueil</a>
-          <a href="a-propos.html">À propos</a>
-          <a href="boutique.html">Boutique</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
-      <div>
-        <p class="footer-title">Contact</p>
-        <address class="footer-contact">
-          <a href="mailto:contact@sondelia.fr">contact@sondelia.fr</a>
-          <a href="tel:+33123456789">+33 1 23 45 67 89</a>
-          <span>Bordeaux, France</span>
-        </address>
-      </div>
+      <div><a class="footer-brand" href="index.html"><img src="assets/logo-clair.svg" alt=""><span>Sondélia</span></a><p>La technologie au service de votre piscine. Surveillance intelligente, sérénité garantie.</p></div>
+      <nav aria-label="Navigation pied de page"><p class="footer-title">Navigation</p><div class="footer-nav"><a href="index.html">Accueil</a><a href="boutique.html">Boutique</a><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a></div></nav>
+      <div><p class="footer-title">Contact</p><address class="footer-contact"><a href="mailto:contact@sondelia.fr">contact@sondelia.fr</a><a href="tel:+33123456789">+33 1 23 45 67 89</a><span>Paris, France</span></address></div>
     </div>
-    <div class="container footer-bottom"><p>© 2026 Sondélia. Tous droits réservés.</p></div>
+    <div class="container footer-bottom"><p>© 2026 Sondélia. Tous droits réservés.</p><div class="footer-legal"><a href="#">Mentions légales</a><a href="#">Politique de confidentialité</a></div></div>
   </footer>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Capteur Aqua Sondélia pour centraliser les données de votre piscine.">
-  <title>Capteur Aqua | Sondélia</title>
+  <meta name="description" content="Espace compte Sondélia.">
+  <title>Mon compte | Sondélia</title>
   <link rel="stylesheet" href="assets/styles.css?v=20260610-maquettes">
   <script src="assets/main.js" defer></script>
 </head>
@@ -20,43 +20,21 @@
   </header>
 
   <main id="main" class="page-frost">
-    <section class="product-detail-page">
-      <div class="container"><a class="back-link" href="boutique.html">← Retour à la boutique</a></div>
-      <div class="container product-detail">
-        <div class="product-gallery">
-          <div class="product-media"><img src="assets/product-capteur-photo.svg" alt="Capteur Aqua Sondélia"></div>
-          <div class="gallery-thumbs"><button class="thumb is-active" type="button"><img src="assets/product-capteur-photo.svg" alt=""></button><button class="thumb" type="button"><img src="assets/product-capteur-photo.svg" alt=""></button></div>
-        </div>
-        <div>
-          <span class="eyebrow">Capteur</span>
-          <h1>Capteur Aqua</h1>
-          <p>Hub intelligent qui centralise et analyse les données de votre piscine.</p>
-          <div class="purchase-panel">
-            <span class="price">149€ TTC</span>
-            <div class="product-actions"><button class="btn btn-primary" type="button" data-cart="Capteur Aqua">Ajouter au panier</button><button class="btn btn-outline-danger" type="button" data-favorite="Capteur Aqua">Ajouter aux favoris</button></div>
-            <p class="purchase-note">Installation simple · garantie 2 ans</p>
+    <section class="account-section">
+      <div class="container account-wrap">
+        <span class="eyebrow">Mon espace</span>
+        <h1>Mon Compte</h1>
+        <div class="account-card">
+          <div class="profile-head">
+            <span class="profile-icon" aria-hidden="true">♙</span>
+            <div><strong>elise passicousset</strong><p>elise.passicousset@gmail.com</p></div>
           </div>
-          <h2>Caractéristiques</h2>
-          <ul class="feature-list">
-            <li><span class="check-icon">✓</span>Centralisation des données piscine</li>
-            <li><span class="check-icon">✓</span>Détection d’état des équipements</li>
-            <li><span class="check-icon">✓</span>Connexion à l’application Sondélia</li>
-            <li><span class="check-icon">✓</span>Alertes en cas d’anomalie</li>
-          </ul>
+          <div class="form-grid">
+            <div class="field full"><label for="name">Nom complet</label><input id="name" value="elise passicousset" readonly></div>
+            <div class="field full"><label for="mail">Email</label><input id="mail" value="elise.passicousset@gmail.com" readonly></div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="section section-soft" aria-labelledby="spec-title">
-      <div class="container">
-        <h2 id="spec-title">Spécifications</h2>
-        <dl class="spec-grid">
-          <div class="spec-card"><dt>Dimensions</dt><dd>80 × 80 mm</dd></div>
-          <div class="spec-card"><dt>Poids</dt><dd>120 g</dd></div>
-          <div class="spec-card"><dt>Alimentation</dt><dd>USB-C</dd></div>
-          <div class="spec-card"><dt>Connectivité</dt><dd>Wi-Fi 2,4 GHz</dd></div>
-          <div class="spec-card"><dt>Compatibilité</dt><dd>Premium</dd></div>
-          <div class="spec-card"><dt>Usage</dt><dd>Piscine privée</dd></div>
-        </dl>
+        <div class="logout-panel"><button class="btn btn-outline-danger" type="button">Se déconnecter</button></div>
       </div>
     </section>
   </main>

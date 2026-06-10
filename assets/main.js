@@ -6,7 +6,7 @@ const favoriteButtons = document.querySelectorAll("[data-favorite]");
 const contactForm = document.querySelector("[data-contact-form]");
 const formStatus = document.querySelector("[data-form-status]");
 
-const getCartCount = () => Number(localStorage.getItem("sondeliaCartCount") || "0");
+const getCartCount = () => Number(localStorage.getItem("sondeliaCartCount") || "1");
 
 const setCartCount = (count) => {
   localStorage.setItem("sondeliaCartCount", String(count));
