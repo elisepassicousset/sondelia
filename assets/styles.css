@@ -156,8 +156,9 @@ p {
 }
 
 .brand img {
-  width: 174px;
-  height: auto;
+  width: 46px;
+  height: 60px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -968,8 +969,19 @@ textarea:focus {
 }
 
 .footer-brand img {
-  width: 178px;
-  filter: brightness(0) invert(1);
+  width: 54px;
+  height: 70px;
+  object-fit: contain;
+  filter: none;
+}
+
+.footer-brand {
+  display: inline-grid;
+  width: 76px;
+  height: 90px;
+  place-items: center;
+  border-radius: var(--radius);
+  background: var(--white);
 }
 
 .footer-title {
@@ -1055,7 +1067,8 @@ textarea:focus {
   }
 
   .brand img {
-    width: 148px;
+    width: 42px;
+    height: 54px;
   }
 
   .nav-toggle {
