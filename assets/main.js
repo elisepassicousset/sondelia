@@ -5,6 +5,7 @@ const cartButtons = document.querySelectorAll("[data-cart]");
 const favoriteButtons = document.querySelectorAll("[data-favorite]");
 const contactForm = document.querySelector("[data-contact-form]");
 const formStatus = document.querySelector("[data-form-status]");
+const faqButtons = document.querySelectorAll("[data-faq-toggle]");
 
 const getCartCount = () => Number(localStorage.getItem("sondeliaCartCount") || "1");
 
@@ -58,6 +59,24 @@ favoriteButtons.forEach((button) => {
     const isFavorite = button.getAttribute("aria-pressed") === "true";
     button.setAttribute("aria-pressed", String(!isFavorite));
     button.textContent = isFavorite ? "Ajouter aux favoris" : "Ajouté aux favoris";
+  });
+});
+
+faqButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const answer = document.getElementById(button.getAttribute("aria-controls"));
+    const icon = button.querySelector(".faq-toggle");
+    const isOpen = button.getAttribute("aria-expanded") === "true";
+
+    button.setAttribute("aria-expanded", String(!isOpen));
+
+    if (answer) {
+      answer.hidden = isOpen;
+    }
+
+    if (icon) {
+      icon.textContent = isOpen ? "+" : "-";
+    }
   });
 });
 

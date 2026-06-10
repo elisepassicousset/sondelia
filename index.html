@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Sondélia vous aide à suivre et optimiser la gestion de votre piscine à distance.">
   <title>Sondélia | Piscine connectée et responsable</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20260610-testimonials">
-  <script src="assets/main.js" defer></script>
+  <link rel="stylesheet" href="assets/styles.css?v=20260610-faq">
+  <script src="assets/main.js?v=20260610-faq" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -139,7 +139,7 @@
       </div>
     </section>
 
-    <section class="section section-frost" aria-labelledby="faq-title">
+    <section class="section section-frost faq-section" aria-labelledby="faq-title">
       <div class="container">
         <div class="section-heading center">
           <span class="eyebrow">FAQ</span>
@@ -147,11 +147,51 @@
           <p>Tout savoir sur l’installation, la compatibilité et l’utilisation de Sondélia.</p>
         </div>
         <div class="faq-list">
-          <div class="faq-item"><span>À quoi sert la sonde Sondélia ?</span><span>+</span></div>
-          <div class="faq-item"><span>Sondélia fonctionne-t-elle avec ma piscine ?</span><span>+</span></div>
-          <div class="faq-item"><span>Quel est le produit le plus adapté ?</span><span>+</span></div>
-          <div class="faq-item"><span>Comment recevoir les alertes ?</span><span>+</span></div>
-          <div class="faq-item"><span>Les données sont-elles sécurisées ?</span><span>+</span></div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-sonde" data-faq-toggle>
+              <span>À quoi sert la sonde Sondélia ?</span>
+              <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-sonde" hidden>
+              <p>Elle mesure les informations clés de votre bassin pour vous aider à suivre la qualité de l’eau et intervenir au bon moment.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-compatibilite" data-faq-toggle>
+              <span>Sondélia fonctionne-t-elle avec ma piscine ?</span>
+              <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-compatibilite" hidden>
+              <p>Oui, Sondélia est pensée pour s’adapter aux piscines familiales, qu’elles soient enterrées ou hors-sol.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-produit" data-faq-toggle>
+              <span>Quel est le produit le plus adapté ?</span>
+              <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-produit" hidden>
+              <p>La sonde convient pour un suivi complet, tandis que le capteur est idéal pour une surveillance plus simple au quotidien.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-alertes" data-faq-toggle>
+              <span>Comment recevoir les alertes ?</span>
+              <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-alertes" hidden>
+              <p>Les alertes apparaissent dans l’application mobile pour vous prévenir rapidement lorsqu’une action est recommandée.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-donnees" data-faq-toggle>
+              <span>Les données sont-elles sécurisées ?</span>
+              <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-donnees" hidden>
+              <p>Oui, les données sont utilisées uniquement pour le suivi de votre piscine et restent associées à votre espace utilisateur.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
