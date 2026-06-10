@@ -969,8 +969,8 @@ textarea:focus {
 }
 
 .footer-brand img {
-  width: 54px;
-  height: 70px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
   filter: none;
 }
@@ -978,10 +978,9 @@ textarea:focus {
 .footer-brand {
   display: inline-grid;
   width: 76px;
-  height: 90px;
+  height: 76px;
   place-items: center;
   border-radius: var(--radius);
-  background: var(--white);
 }
 
 .footer-title {
