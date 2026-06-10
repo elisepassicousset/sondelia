@@ -454,6 +454,15 @@ p {
   color: var(--blue-main);
 }
 
+.icon-badge svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .stars {
   color: var(--yellow);
   font-size: 1.1rem;
