@@ -976,6 +976,7 @@ textarea:focus {
   width: 72px;
   height: 58px;
   place-items: center;
+  overflow: hidden;
   padding: 4px;
   border: 2px solid var(--line);
   border-radius: var(--radius);
@@ -992,6 +993,9 @@ textarea:focus {
 .thumb img {
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
+  display: block;
+  max-height: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -1024,6 +1028,17 @@ textarea:focus {
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+.purchase-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.purchase-row .product-actions {
+  flex: 0 0 auto;
 }
 
 .subscription-panel {
@@ -1342,6 +1357,11 @@ textarea:focus {
 
   .btn {
     width: 100%;
+  }
+
+  .purchase-row {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .form-panel,
