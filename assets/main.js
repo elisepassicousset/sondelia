@@ -6,6 +6,7 @@ const favoriteButtons = document.querySelectorAll("[data-favorite]");
 const contactForm = document.querySelector("[data-contact-form]");
 const formStatus = document.querySelector("[data-form-status]");
 const faqButtons = document.querySelectorAll("[data-faq-toggle]");
+const galleryButtons = document.querySelectorAll("[data-gallery-image]");
 
 const getCartCount = () => Number(localStorage.getItem("sondeliaCartCount") || "1");
 
@@ -59,6 +60,23 @@ favoriteButtons.forEach((button) => {
     const isFavorite = button.getAttribute("aria-pressed") === "true";
     button.setAttribute("aria-pressed", String(!isFavorite));
     button.textContent = isFavorite ? "Ajouter aux favoris" : "Ajouté aux favoris";
+  });
+});
+
+galleryButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const gallery = button.closest(".product-gallery");
+    const mainImage = gallery?.querySelector("[data-gallery-main]");
+
+    if (!mainImage) {
+      return;
+    }
+
+    mainImage.src = button.dataset.galleryImage;
+    mainImage.alt = button.dataset.galleryAlt;
+    gallery.querySelectorAll("[data-gallery-image]").forEach((thumb) => {
+      thumb.classList.toggle("is-active", thumb === button);
+    });
   });
 });
 

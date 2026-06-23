@@ -1066,6 +1066,19 @@ textarea:focus {
   background: var(--white);
 }
 
+.feature-list--wide {
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.feature-list--wide li {
+  min-height: 78px;
+  padding: 18px 24px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  font-weight: 700;
+}
+
 .check-icon {
   display: grid;
   width: 28px;
