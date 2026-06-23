@@ -960,6 +960,11 @@ textarea:focus {
   object-fit: cover;
 }
 
+.product-media img.is-contained {
+  object-fit: contain;
+  padding: 20px;
+}
+
 .gallery-thumbs {
   display: flex;
   justify-content: center;
@@ -991,6 +996,11 @@ textarea:focus {
   border-radius: 5px;
 }
 
+.thumb--contain img {
+  object-fit: contain;
+  padding: 3px;
+}
+
 .purchase-panel {
   display: grid;
   gap: 16px;
@@ -1007,6 +1017,13 @@ textarea:focus {
   color: var(--blue-dark);
   font-size: 0.9rem;
   font-weight: 700;
+}
+
+.purchase-description {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .subscription-panel {

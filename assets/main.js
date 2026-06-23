@@ -74,6 +74,7 @@ galleryButtons.forEach((button) => {
 
     mainImage.src = button.dataset.galleryImage;
     mainImage.alt = button.dataset.galleryAlt;
+    mainImage.classList.toggle("is-contained", button.dataset.galleryFit === "contain");
     gallery.querySelectorAll("[data-gallery-image]").forEach((thumb) => {
       thumb.classList.toggle("is-active", thumb === button);
     });
